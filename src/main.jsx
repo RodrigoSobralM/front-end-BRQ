@@ -2,8 +2,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from './views/home/App'
-import Logado from './views/Logado/Logado'
+import App from "./views/home/App";
+import Logado from "./views/Logado/Logado";
+import { CARROS_MOCK } from "./mock/carros.js";
+import { FILTER_MOCK } from "./mock/filters.js";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/logado",
-    element: <Logado />,
+    element: <Logado data={CARROS_MOCK} />,
   },
 ]);
 

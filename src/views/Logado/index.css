@@ -1,61 +1,142 @@
+.logoHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
 .logoHeader img {
-  width: 281px;
-  height: 172px;
+  width: 198px;
+  height: 121px;
 }
 
-.containerTable {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.containerTable table {
-  background-color: #31435a;
-  box-shadow: 5px 10px 10px 0px #50bbb2;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.nameColums {
-  width: 100%;
-  height: 55px;
+.list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: white;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.nameColums th {
-  width: 100%;
-}
-
-.nameColums th:nth-child(2) {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-}
-
-.valueColums {
-  background-color: #fff;
+  margin-right: 19px;
   color: #000;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
-  width: 1115px;
+}
+
+.list ul {
+  display: flex;
+  gap: 43px;
+  margin-right: 45px;
+}
+
+.list ul li {
+  list-style: none;
+}
+
+.user {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.user img:nth-child(1) {
+  width: 47px;
+  height: 47px;
+}
+
+.user img:nth-child(3) {
+  width: 18px;
+  height: 18px;
+}
+
+.headerSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #31435a;
+  height: 60px;
+}
+
+.headerSearch input {
+  width: 945px;
+  height: 33px;
+  padding-left: 10px;
+  border-radius: 500px;
+}
+
+.headerSearch button {
+  margin-left: 895px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  width: 10px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+}
+
+.nav {
+  width: 30%;
+  display: flex;
+  margin: 23px 12px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 631px;
+  border-radius: 48px;
+  background: rgba(80, 187, 178, 0.3);
+}
+
+.navBar p {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navBar h1 {
+  padding: 5px 0 20px 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.positionFIlter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 2px solid black;
+  width: 200px;
+  padding: 13px 0 12px 0;
 }
 
-.valueColums td {
-  margin: 10px 0 10px 0;
+.positionFIlter:nth-child(1) {
+  border-top: 2px solid black;
 }
 
-.footerTable {
-  height: 20px;
+.navBar ul li {
+  padding: 0 5px 0   7px ;
+  list-style: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardsPosition {
+  width: 70%;
+  margin-top: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
 }
