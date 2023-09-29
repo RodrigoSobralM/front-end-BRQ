@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./views/home/App";
 import Logado from "./views/Logado/Logado";
 import { CARROS_MOCK } from "./mock/carros.js";
-import { FILTER_MOCK } from "./mock/filters.js";
+
 const router = createBrowserRouter([
   {
     path: "/",
