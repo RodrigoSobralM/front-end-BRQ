@@ -1,6 +1,7 @@
 import React from "react";
+import Cards from "../../components/Cards/Cards";
 import "./index.css";
-const Logado = () => {
+const Logado = ({ data }) => {
   return (
     <div>
       <header>
@@ -8,7 +9,9 @@ const Logado = () => {
           <img src="/logo.svg" alt="" />
           <div className="list">
             <ul>
-              <li>Leilão</li>
+              <li>
+                <b>Leilão</b>
+              </li>
               <li>Contato</li>
               <li>Venda</li>
             </ul>
@@ -26,9 +29,68 @@ const Logado = () => {
             name=""
             id=""
           />
-          <button><img src="/lupaIcon.svg" alt="" /></button>
+          <button>
+            <img src="/lupaIcon.svg" alt="" />
+          </button>
         </div>
       </header>
+      <section>
+        <div className="nav">
+          <div className="navBar">
+            <h1>Filtros</h1>
+            <div>
+              <ul>
+                <div className="positionFIlter">
+                  <li>Marca</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Modelo</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Ano</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Preço</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Tipo</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Cor</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Status</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Combustível</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Quilometragem</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+                <div className="positionFIlter">
+                  <li>Localização</li>
+                  <img src="/setaIcon.svg" alt="" />
+                </div>
+              </ul>
+            </div>
+            <p>+</p>
+          </div>
+        </div>
+        <div className="cardsPosition">
+          {data.map((card) => (
+            <Cards key={card.id} data={card} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

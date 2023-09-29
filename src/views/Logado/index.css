@@ -1,5 +1,4 @@
 .logoHeader {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -68,6 +67,76 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  width: 100%;
+  width: 10px;
   cursor: pointer;
+}
+
+section {
+  display: flex;
+}
+
+.nav {
+  width: 30%;
+  display: flex;
+  margin: 23px 12px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 631px;
+  border-radius: 48px;
+  background: rgba(80, 187, 178, 0.3);
+}
+
+.navBar p {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navBar h1 {
+  padding: 5px 0 20px 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.positionFIlter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 200px;
+  padding: 13px 0 12px 0;
+}
+
+.positionFIlter:nth-child(1) {
+  border-top: 2px solid black;
+}
+
+.navBar ul li {
+  padding: 0 5px 0   7px ;
+  list-style: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardsPosition {
+  width: 70%;
+  margin-top: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
 }
