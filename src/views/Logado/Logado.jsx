@@ -3,67 +3,32 @@ import "./index.css";
 const Logado = () => {
   return (
     <div>
-      <header className="logoHeader">
-        <img src="/logo.svg" alt="" />
+      <header>
+        <div className="logoHeader">
+          <img src="/logo.svg" alt="" />
+          <div className="list">
+            <ul>
+              <li>Leilão</li>
+              <li>Contato</li>
+              <li>Venda</li>
+            </ul>
+            <div className="user">
+              <img src="/userIcon.svg" alt="" />
+              <p>Olá, User!</p>
+              <img src="/setaIcon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="headerSearch">
+          <input
+            type="text"
+            placeholder="Pesquisar por: Marca, Nome, Ano, Cor..."
+            name=""
+            id=""
+          />
+          <button><img src="/lupaIcon.svg" alt="" /></button>
+        </div>
       </header>
-      <section className="containerTable">
-        <table>
-          <tr className="nameColums">
-            <th>CARGOS:</th>
-            <th>VANTAGENS:</th>
-            <th>SITUAÇÃO:</th>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="valueColums">
-            <td>Gerente</td>
-            <td>
-              Categoria do carro: Intermediário automatico<br></br>
-              Despesas: Gasolina
-            </td>
-            <td>Ativo</td>
-          </tr>
-          <tr className="footerTable"></tr>
-        </table>
-      </section>
     </div>
   );
 };
